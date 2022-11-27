@@ -1,5 +1,4 @@
 import Countdown from "../islands/Countdown.tsx";
-import { Footer } from "../components/Footer.tsx";
 
 export default function Page() {
   const date = new Date();
@@ -9,7 +8,6 @@ export default function Page() {
       <p>
         The big event is happening <Countdown target={date.toISOString()} />.
       </p>
-      <Footer />
     </>
   );
 }
